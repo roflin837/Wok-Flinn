@@ -7,7 +7,8 @@
 <style>
   :root{--accent:#00ff88;--bg:#060607;--card:#0f1112;--muted:#cfcfcf}
   *{box-sizing:border-box}
-  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#040405,var(--bg));color:#fff}
+  /* Latar belakang default yang gelap */
+  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#040405,var(--bg));color:#fff} 
   header{background:var(--card);padding:22px 12px;text-align:center;border-bottom:1px solid rgba(255,255,255,.04)}
   header h1{margin:0;color:var(--accent);font-size:20px}
   .container{max-width:980px;margin:22px auto;padding:12px}
@@ -23,11 +24,12 @@
   @media(min-width:900px){.container{padding:0}}
 </style>
 <script>
-  // Nomor admin tetap sesuai permintaan
+  // Nomor admin
   const ADMIN = "6281585595822";
 
-  // Semua pesan berlabel "simulasi" — template latihan
+  // FUNGSI INI SUDAH OTOMATIS MEMBUKA CHAT WA
   function order(text){
+    // Pesan 'Simulasi order: ... (demo)' akan dikirim ke nomor ADMIN
     const msg = encodeURIComponent("Simulasi order: " + text + " (demo)");
     window.open(https://wa.me/${ADMIN}?text=${msg},'_blank');
   }
