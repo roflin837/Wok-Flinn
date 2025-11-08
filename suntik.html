@@ -23,152 +23,150 @@
   @media(min-width:900px){.container{padding:0}}
 </style>
 <script>
-  // Nomor admin tetap sesuai permintaan
-  const ADMIN = "6281585595822";
+const ADMIN = "6281585595822";
 
-  // FUNGSI BARU: Menggunakan format "Bg order..."
-  function order(text){
-    const msg = encodeURIComponent("Bg order " + text); // Pesan diubah menjadi "Bg order [text]"
-    window.open(`https://wa.me/${ADMIN}?text=${msg}`,'_blank');
-  }
+// Fungsi order WA dengan format lengkap
+function order(platform, paket, harga){
+  const msg = encodeURIComponent(`Bang order paket ${paket} ${platform} = ${harga}`);
+  window.open(`https://wa.me/${ADMIN}?text=${msg}`,'_blank');
+}
 </script>
 </head>
 <body>
-  <header>
-    <h1>Suntik Sosmed — Demo (daftar lengkap)</h1>
-    <div class="note">Halaman demo untuk latihan/portofolio — semua pesan berlabel "simulasi".</div>
-  </header>
+<header>
+  <h1>Suntik Sosmed — Demo (daftar lengkap)</h1>
+  <div class="note">Halaman demo untuk latihan/portofolio — semua pesan berlabel "simulasi".</div>
+</header>
 
-  <div class="container">
-    
-    <div class="card">
-      <h2>Paket FYP TikTok</h2>
-      <ul>
-        <li onclick="order('TT FYP 5k=15k')"><span>5k View + 5k Like + 5k Share</span><span class="price">15k</span></li>
-        <li onclick="order('TT FYP 10k=25k')"><span>10k View + 10k Like + 10k Share</span><span class="price">25k</span></li>
-        <li onclick="order('TT FYP 15k=35k')"><span>15k View + 15k Like + 15k Share</span><span class="price">35k</span></li>
-        <li onclick="order('TT FYP 20k=45k')"><span>20k View + 20k Like + 20k Share</span><span class="price">45k</span></li>
-        <li onclick="order('TT FYP 25k=55k')"><span>25k View + 25k Like + 25k Share</span><span class="price">55k</span></li>
-        <li onclick="order('TT FYP 30k=65k')"><span>30k View + 30k Like + 30k Share</span><span class="price">65k</span></li>
-      </ul>
-    </div>
-    
-    <div class="card">
-      <h2>Saluran WhatsApp</h2>
-      <ul>
-        <li onclick="order('WA Channel 100=5k')"><span>100 Pengikut</span><span class="price">5k</span></li>
-        <li onclick="order('WA Channel 200=9k')"><span>200 Pengikut</span><span class="price">9k</span></li>
-        <li onclick="order('WA Channel 300=13k')"><span>300 Pengikut</span><span class="price">13k</span></li>
-        <li onclick="order('WA Channel 400=17k')"><span>400 Pengikut</span><span class="price">17k</span></li>
-        <li onclick="order('WA Channel 500=20k')"><span>500 Pengikut</span><span class="price">20k</span></li>
-        <li onclick="order('WA Channel 600=23k')"><span>600 Pengikut</span><span class="price">23k</span></li>
-        <li onclick="order('WA Channel 700=26k')"><span>700 Pengikut</span><span class="price">26k</span></li>
-        <li onclick="order('WA Channel 800=29k')"><span>800 Pengikut</span><span class="price">29k</span></li>
-        <li onclick="order('WA Channel 900=32k')"><span>900 Pengikut</span><span class="price">32k</span></li>
-        <li onclick="order('WA Channel 1000=35k')"><span>1000 Pengikut</span><span class="price">35k</span></li>
-      </ul>
-    </div>
+<div class="container">
 
-    <div class="card">
-      <h2>Followers Instagram</h2>
-      <ul>
-        <li onclick="order('IG Foll 100=5k')"><span>100 Foll</span><span class="price">5k</span></li>
-        <li onclick="order('IG Foll 200=9k')"><span>200 Foll</span><span class="price">9k</span></li>
-        <li onclick="order('IG Foll 300=12k')"><span>300 Foll</span><span class="price">12k</span></li>
-        <li onclick="order('IG Foll 400=15k')"><span>400 Foll</span><span class="price">15k</span></li>
-        <li onclick="order('IG Foll 500=18k')"><span>500 Foll</span><span class="price">18k</span></li>
-        <li onclick="order('IG Foll 600=20k')"><span>600 Foll</span><span class="price">20k</span></li>
-        <li onclick="order('IG Foll 700=23k')"><span>700 Foll</span><span class="price">23k</span></li>
-        <li onclick="order('IG Foll 800=26k')"><span>800 Foll</span><span class="price">26k</span></li>
-        <li onclick="order('IG Foll 900=29k')"><span>900 Foll</span><span class="price">29k</span></li>
-        <li onclick="order('IG Foll 1000=35k')"><span>1000 Foll</span><span class="price">35k</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Like Instagram</h2>
-      <ul>
-        <li onclick="order('IG Like 100=2k')"><span>100 Like</span><span class="price">2k</span></li>
-        <li onclick="order('IG Like 200=3k')"><span>200 Like</span><span class="price">3k</span></li>
-        <li onclick="order('IG Like 300=4k')"><span>300 Like</span><span class="price">4k</span></li>
-        <li onclick="order('IG Like 400=5k')"><span>400 Like</span><span class="price">5k</span></li>
-        <li onclick="order('IG Like 500=6k')"><span>500 Like</span><span class="price">6k</span></li>
-        <li onclick="order('IG Like 600=7k')"><span>600 Like</span><span class="price">7k</span></li>
-        <li onclick="order('IG Like 700=8k')"><span>700 Like</span><span class="price">8k</span></li>
-        <li onclick="order('IG Like 800=9k')"><span>800 Like</span><span class="price">9k</span></li>
-        <li onclick="order('IG Like 900=10k')"><span>900 Like</span><span class="price">10k</span></li>
-        <li onclick="order('IG Like 1000=12k')"><span>1000 Like</span><span class="price">12k</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>View Instagram</h2>
-      <ul>
-        <li onclick="order('IG View 100=1k')"><span>100 View</span><span class="price">1k</span></li>
-        <li onclick="order('IG View 200=1.5k')"><span>200 View</span><span class="price">1.5k</span></li>
-        <li onclick="order('IG View 300=2k')"><span>300 View</span><span class="price">2k</span></li>
-        <li onclick="order('IG View 400=2.5k')"><span>400 View</span><span class="price">2.5k</span></li>
-        <li onclick="order('IG View 500=3k')"><span>500 View</span><span class="price">3k</span></li>
-        <li onclick="order('IG View 600=3.5k')"><span>600 View</span><span class="price">3.5k</span></li>
-        <li onclick="order('IG View 700=4k')"><span>700 View</span><span class="price">4k</span></li>
-        <li onclick="order('IG View 800=4.5k')"><span>800 View</span><span class="price">4.5k</span></li>
-        <li onclick="order('IG View 900=5k')"><span>900 View</span><span class="price">5k</span></li>
-        <li onclick="order('IG View 1000=5.5k')"><span>1000 View</span><span class="price">5.5k</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Followers TikTok</h2>
-      <ul>
-        <li onclick="order('TT Foll 100=4k')"><span>100 Foll</span><span class="price">4k</span></li>
-        <li onclick="order('TT Foll 200=7k')"><span>200 Foll</span><span class="price">7k</span></li>
-        <li onclick="order('TT Foll 300=9k')"><span>300 Foll</span><span class="price">9k</span></li>
-        <li onclick="order('TT Foll 400=11k')"><span>400 Foll</span><span class="price">11k</span></li>
-        <li onclick="order('TT Foll 500=13k')"><span>500 Foll</span><span class="price">13k</span></li>
-        <li onclick="order('TT Foll 600=15k')"><span>600 Foll</span><span class="price">15k</span></li>
-        <li onclick="order('TT Foll 700=17k')"><span>700 Foll</span><span class="price">17k</span></li>
-        <li onclick="order('TT Foll 800=19k')"><span>800 Foll</span><span class="price">19k</span></li>
-        <li onclick="order('TT Foll 900=21k')"><span>900 Foll</span><span class="price">21k</span></li>
-        <li onclick="order('TT Foll 1000=25k')"><span>1000 Foll</span><span class="price">25k</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Like TikTok</h2>
-      <ul>
-        <li onclick="order('TT Like 100=1k')"><span>100 Like</span><span class="price">1k</span></li>
-        <li onclick="order('TT Like 200=2k')"><span>200 Like</span><span class="price">2k</span></li>
-        <li onclick="order('TT Like 300=3k')"><span>300 Like</span><span class="price">3k</span></li>
-        <li onclick="order('TT Like 400=4k')"><span>400 Like</span><span class="price">4k</span></li>
-        <li onclick="order('TT Like 500=5k')"><span>500 Like</span><span class="price">5k</span></li>
-        <li onclick="order('TT Like 600=6k')"><span>600 Like</span><span class="price">6k</span></li>
-        <li onclick="order('TT Like 700=7k')"><span>700 Like</span><span class="price">7k</span></li>
-        <li onclick="order('TT Like 800=8k')"><span>800 Like</span><span class="price">8k</span></li>
-        <li onclick="order('TT Like 900=9k')"><span>900 Like</span><span class="price">9k</span></li>
-        <li onclick="order('TT Like 1000=10k')"><span>1000 Like</span><span class="price">10k</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>View TikTok</h2>
-      <ul>
-        <li onclick="order('TT View 100=1k')"><span>100 View</span><span class="price">1k</span></li>
-        <li onclick="order('TT View 200=1.5k')"><span>200 View</span><span class="price">1.5k</span></li>
-        <li onclick="order('TT View 300=2k')"><span>300 View</span><span class="price">2k</span></li>
-        <li onclick="order('TT View 400=2.5k')"><span>400 View</span><span class="price">2.5k</span></li>
-        <li onclick="order('TT View 500=3k')"><span>500 View</span><span class="price">3k</span></li>
-        <li onclick="order('TT View 600=3.5k')"><span>600 View</span><span class="price">3.5k</span></li>
-        <li onclick="order('TT View 700=4k')"><span>700 View</span><span class="price">4k</span></li>
-        <li onclick="order('TT View 800=4.5k')"><span>800 View</span><span class="price">4.5k</span></li>
-        <li onclick="order('TT View 900=5k')"><span>900 View</span><span class="price">5k</span></li>
-        <li onclick="order('TT View 1000=5.5k')"><span>1000 View</span><span class="price">5.5k</span></li>
-      </ul>
-    </div>
-
+  <div class="card">
+    <h2>Paket FYP TikTok</h2>
+    <ul>
+      <li onclick="order('TikTok','FYP 5k View + 5k Like + 5k Share','15k')"><span>5k View + 5k Like + 5k Share</span><span class="price">15k</span></li>
+      <li onclick="order('TikTok','FYP 10k View + 10k Like + 10k Share','25k')"><span>10k View + 10k Like + 10k Share</span><span class="price">25k</span></li>
+      <li onclick="order('TikTok','FYP 15k View + 15k Like + 15k Share','35k')"><span>15k View + 15k Like + 15k Share</span><span class="price">35k</span></li>
+      <li onclick="order('TikTok','FYP 20k View + 20k Like + 20k Share','45k')"><span>20k View + 20k Like + 20k Share</span><span class="price">45k</span></li>
+      <li onclick="order('TikTok','FYP 25k View + 25k Like + 25k Share','55k')"><span>25k View + 25k Like + 25k Share</span><span class="price">55k</span></li>
+      <li onclick="order('TikTok','FYP 30k View + 30k Like + 30k Share','65k')"><span>30k View + 30k Like + 30k Share</span><span class="price">65k</span></li>
+    </ul>
   </div>
 
-  <a href="index.html" class="back">← Kembali ke Beranda</a>
+  <div class="card">
+    <h2>Saluran WhatsApp</h2>
+    <ul>
+      <li onclick="order('WhatsApp','100 Pengikut','5k')"><span>100 Pengikut</span><span class="price">5k</span></li>
+      <li onclick="order('WhatsApp','200 Pengikut','9k')"><span>200 Pengikut</span><span class="price">9k</span></li>
+      <li onclick="order('WhatsApp','300 Pengikut','13k')"><span>300 Pengikut</span><span class="price">13k</span></li>
+      <li onclick="order('WhatsApp','400 Pengikut','17k')"><span>400 Pengikut</span><span class="price">17k</span></li>
+      <li onclick="order('WhatsApp','500 Pengikut','20k')"><span>500 Pengikut</span><span class="price">20k</span></li>
+      <li onclick="order('WhatsApp','600 Pengikut','23k')"><span>600 Pengikut</span><span class="price">23k</span></li>
+      <li onclick="order('WhatsApp','700 Pengikut','26k')"><span>700 Pengikut</span><span class="price">26k</span></li>
+      <li onclick="order('WhatsApp','800 Pengikut','29k')"><span>800 Pengikut</span><span class="price">29k</span></li>
+      <li onclick="order('WhatsApp','900 Pengikut','32k')"><span>900 Pengikut</span><span class="price">32k</span></li>
+      <li onclick="order('WhatsApp','1000 Pengikut','35k')"><span>1000 Pengikut</span><span class="price">35k</span></li>
+    </ul>
+  </div>
 
-  <footer>© 2025 Wok Flinn Mau Femes — Demo only. Pesan WA berlabel "simulasi".</footer>
+  <div class="card">
+    <h2>Followers Instagram</h2>
+    <ul>
+      <li onclick="order('Instagram','100 Foll','5k')"><span>100 Foll</span><span class="price">5k</span></li>
+      <li onclick="order('Instagram','200 Foll','9k')"><span>200 Foll</span><span class="price">9k</span></li>
+      <li onclick="order('Instagram','300 Foll','12k')"><span>300 Foll</span><span class="price">12k</span></li>
+      <li onclick="order('Instagram','400 Foll','15k')"><span>400 Foll</span><span class="price">15k</span></li>
+      <li onclick="order('Instagram','500 Foll','18k')"><span>500 Foll</span><span class="price">18k</span></li>
+      <li onclick="order('Instagram','600 Foll','20k')"><span>600 Foll</span><span class="price">20k</span></li>
+      <li onclick="order('Instagram','700 Foll','23k')"><span>700 Foll</span><span class="price">23k</span></li>
+      <li onclick="order('Instagram','800 Foll','26k')"><span>800 Foll</span><span class="price">26k</span></li>
+      <li onclick="order('Instagram','900 Foll','29k')"><span>900 Foll</span><span class="price">29k</span></li>
+      <li onclick="order('Instagram','1000 Foll','35k')"><span>1000 Foll</span><span class="price">35k</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Like Instagram</h2>
+    <ul>
+      <li onclick="order('Instagram','100 Like','2k')"><span>100 Like</span><span class="price">2k</span></li>
+      <li onclick="order('Instagram','200 Like','3k')"><span>200 Like</span><span class="price">3k</span></li>
+      <li onclick="order('Instagram','300 Like','4k')"><span>300 Like</span><span class="price">4k</span></li>
+      <li onclick="order('Instagram','400 Like','5k')"><span>400 Like</span><span class="price">5k</span></li>
+      <li onclick="order('Instagram','500 Like','6k')"><span>500 Like</span><span class="price">6k</span></li>
+      <li onclick="order('Instagram','600 Like','7k')"><span>600 Like</span><span class="price">7k</span></li>
+      <li onclick="order('Instagram','700 Like','8k')"><span>700 Like</span><span class="price">8k</span></li>
+      <li onclick="order('Instagram','800 Like','9k')"><span>800 Like</span><span class="price">9k</span></li>
+      <li onclick="order('Instagram','900 Like','10k')"><span>900 Like</span><span class="price">10k</span></li>
+      <li onclick="order('Instagram','1000 Like','12k')"><span>1000 Like</span><span class="price">12k</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>View Instagram</h2>
+    <ul>
+      <li onclick="order('Instagram','100 View','1k')"><span>100 View</span><span class="price">1k</span></li>
+      <li onclick="order('Instagram','200 View','1.5k')"><span>200 View</span><span class="price">1.5k</span></li>
+      <li onclick="order('Instagram','300 View','2k')"><span>300 View</span><span class="price">2k</span></li>
+      <li onclick="order('Instagram','400 View','2.5k')"><span>400 View</span><span class="price">2.5k</span></li>
+      <li onclick="order('Instagram','500 View','3k')"><span>500 View</span><span class="price">3k</span></li>
+      <li onclick="order('Instagram','600 View','3.5k')"><span>600 View</span><span class="price">3.5k</span></li>
+      <li onclick="order('Instagram','700 View','4k')"><span>700 View</span><span class="price">4k</span></li>
+      <li onclick="order('Instagram','800 View','4.5k')"><span>800 View</span><span class="price">4.5k</span></li>
+      <li onclick="order('Instagram','900 View','5k')"><span>900 View</span><span class="price">5k</span></li>
+      <li onclick="order('Instagram','1000 View','5.5k')"><span>1000 View</span><span class="price">5.5k</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Followers TikTok</h2>
+    <ul>
+      <li onclick="order('TikTok','100 Foll','4k')"><span>100 Foll</span><span class="price">4k</span></li>
+      <li onclick="order('TikTok','200 Foll','7k')"><span>200 Foll</span><span class="price">7k</span></li>
+      <li onclick="order('TikTok','300 Foll','9k')"><span>300 Foll</span><span class="price">9k</span></li>
+      <li onclick="order('TikTok','400 Foll','11k')"><span>400 Foll</span><span class="price">11k</span></li>
+      <li onclick="order('TikTok','500 Foll','13k')"><span>500 Foll</span><span class="price">13k</span></li>
+      <li onclick="order('TikTok','600 Foll','15k')"><span>600 Foll</span><span class="price">15k</span></li>
+      <li onclick="order('TikTok','700 Foll','17k')"><span>700 Foll</span><span class="price">17k</span></li>
+      <li onclick="order('TikTok','800 Foll','19k')"><span>800 Foll</span><span class="price">19k</span></li>
+      <li onclick="order('TikTok','900 Foll','21k')"><span>900 Foll</span><span class="price">21k</span></li>
+      <li onclick="order('TikTok','1000 Foll','25k')"><span>1000 Foll</span><span class="price">25k</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Like TikTok</h2>
+    <ul>
+      <li onclick="order('TikTok','100 Like','1k')"><span>100 Like</span><span class="price">1k</span></li>
+      <li onclick="order('TikTok','200 Like','2k')"><span>200 Like</span><span class="price">2k</span></li>
+      <li onclick="order('TikTok','300 Like','3k')"><span>300 Like</span><span class="price">3k</span></li>
+      <li onclick="order('TikTok','400 Like','4k')"><span>400 Like</span><span class="price">4k</span></li>
+      <li onclick="order('TikTok','500 Like','5k')"><span>500 Like</span><span class="price">5k</span></li>
+      <li onclick="order('TikTok','600 Like','6k')"><span>600 Like</span><span class="price">6k</span></li>
+      <li onclick="order('TikTok','700 Like','7k')"><span>700 Like</span><span class="price">7k</span></li>
+      <li onclick="order('TikTok','800 Like','8k')"><span>800 Like</span><span class="price">8k</span></li>
+      <li onclick="order('TikTok','900 Like','9k')"><span>900 Like</span><span class="price">9k</span></li>
+      <li onclick="order('TikTok','1000 Like','10k')"><span>1000 Like</span><span class="price">10k</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>View TikTok</h2>
+    <ul>
+      <li onclick="order('TikTok','100 View','1k')"><span>100 View</span><span class="price">1k</span></li>
+      <li onclick="order('TikTok','200 View','1.5k')"><span>200 View</span><span class="price">1.5k</span></li>
+      <li onclick="order('TikTok','300 View','2k')"><span>300 View</span><span class="price">2k</span></li>
+      <li onclick="order('TikTok','400 View','2.5k')"><span>400 View</span><span class="price">2.5k</span></li>
+      <li onclick="order('TikTok','500 View','3k')"><span>500 View</span><span class="price">3k</span></li>
+      <li onclick="order('TikTok','600 View','3.5k')"><span>600 View</span><span class="price">3.5k</span></li>
+      <li onclick="order('TikTok','700 View','4k')"><span>700 View</span><span class="price">4k</span></li>
+      <li onclick="order('TikTok','800 View','4.5k')"><span>800 View</span><span class="price">4.5k</span></li>
+      <li onclick="order('TikTok','900 View','5k')"><span>900 View</span><span class="price">5k</span></li>
+      <li onclick="order('TikTok','1000 View','5.5k')"><span>1000 View</span><span class="price">5.5k</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<a href="index.html" class="back">← Kembali ke Beranda</a>
+<footer>© 2025 Wok Flinn Mau Femes — Demo only. Pesan WA berlabel "simulasi".</footer>
 </body>
-          </html>
+    </html>
