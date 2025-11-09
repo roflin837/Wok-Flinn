@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wok Flinn Mau Femes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  body { 
+    margin:0; 
+    font-family:'Poppins',sans-serif; 
+    background:linear-gradient(120deg,#0099ff,#8f00ff); 
+    background-size:200% 200%; 
+    animation: gradientMove 8s ease infinite; 
+    color:#fff; 
+    text-align:center; 
+    min-height:100vh; 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center;
+  }
+  @keyframes gradientMove {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+  }
+  h1{margin-top:70px;font-size:32px;text-shadow:0 2px 10px rgba(0,0,0,0.2);}
+  .menu{display:flex;justify-content:center;flex-wrap:wrap;gap:25px;margin-bottom:40px;}
+  .card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:30px 50px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  }
+  .card:hover{background:rgba(255,255,255,0.3);transform:scale(1.07);}
+  footer{margin-top:auto;margin-bottom:25px;color:#ddd;font-size:13px;}
+</style>
+</head>
+<body>
+
+<h1>Wok Flinn Mau Femes</h1>
+<p>Pilih layanan kamu:</p>
+
+<div class="menu">
+  <a href="alight.html" class="card">🎬 Alight Motion</a>
+  <a href="capcut.html" class="card">✂ CapCut</a>
+  <a href="gpt.html" class="card">🤖 Chat GPT</a>
+  <a href="nokos.html" class="card">🌐 Nokos</a>
+  <a href="suntikIG.html" class="card">📸 Suntik Instagram</a>
+  <a href="suntikTikTok.html" class="card">🎵 Suntik TikTok</a>
+  <a href="suntikWA.html" class="card">📱 Suntik WhatsApp</a>
+  <a href="https://chat.whatsapp.com/BRBOMQVqG3E6BBlsIprr60?mode=wwt" target="_blank" class="card">💬 Grup WA</a>
+</div>
+
+<div class="menu">
+  <a href="payment.html" class="card">💰 Payment</a>
+</div>
+
+<footer>© 2025 Wok Flinn Mau Femes</footer>
+</body>
+</html>
