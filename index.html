@@ -10,28 +10,33 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: url('alicia.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(120deg, #0099ff, #8f00ff);
+      background-size: 200% 200%;
+      animation: gradientMove 8s ease infinite;
       color: #fff;
       text-align: center;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      backdrop-filter: blur(6px) brightness(0.9);
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     h1 {
       margin-top: 70px;
       font-size: 32px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
 
     p {
       color: #eaeaea;
       font-size: 16px;
       margin-bottom: 30px;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
     .menu {
@@ -94,7 +99,6 @@
       margin-bottom: 25px;
       color: #ddd;
       font-size: 13px;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
     }
   </style>
 </head>
