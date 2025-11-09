@@ -1,2 +1,2 @@
 # Wok-Flinn
-Suntik Sosmed &amp; Nokos
+Suntik Sosmed,Nokos,Apk Prem
