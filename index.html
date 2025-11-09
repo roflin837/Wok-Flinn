@@ -19,6 +19,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
 
     @keyframes gradientMove {
@@ -28,36 +30,24 @@
     }
 
     h1 {
-      margin-top: 70px;
-      font-size: 32px;
+      font-size: 36px;
+      margin-bottom: 40px;
       text-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
 
-    p {
-      color: #eaeaea;
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      margin-bottom: 40px;
-    }
-
     .card {
+      display: inline-block;
       background: rgba(255,255,255,0.15);
       backdrop-filter: blur(10px);
       padding: 30px 50px;
+      margin: 15px;
       border-radius: 14px;
       cursor: pointer;
-      transition: 0.3s;
       color: #fff;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     .card:hover {
@@ -65,21 +55,9 @@
       transform: scale(1.07);
     }
 
-    .payment {
-      margin-top: 30px;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      border-radius: 12px;
-      padding: 20px 35px;
-      max-width: 300px;
-      text-align: left;
-      font-size: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
     .join {
       display: inline-block;
-      margin-top: 20px;
+      margin: 15px;
       background: #25d366;
       color: white;
       font-weight: 600;
@@ -95,8 +73,7 @@
     }
 
     footer {
-      margin-top: auto;
-      margin-bottom: 25px;
+      margin-top: 40px;
       color: #ddd;
       font-size: 13px;
     }
@@ -104,25 +81,15 @@
 </head>
 <body>
   <h1>Wok Flinn Mau Femes</h1>
-  <p>Pilih layanan kamu:</p>
 
-  <div class="menu">
-    <a href="nokos.html" class="card">📞 Nokos Premium</a>
-    <a href="suntik.html" class="card">⚡ Suntik Sosmed</a>
-  </div>
+  <!-- Layanan -->
+  <a href="#" class="card">📞 Nokos Premium</a>
+  <a href="#" class="card">⚡ Suntik Sosmed</a>
+  <a href="#" class="card">🪿 Alight Motion</a>
 
-  <!-- Tombol Grup WA -->
+  <!-- Grup & WA -->
   <a href="https://chat.whatsapp.com/BRBOMQVqG3E6BBlsIprr60?mode=wwt" target="_blank" class="join">💬 Join Grup WhatsApp</a>
-
-  <!-- Tombol Chat WA Langsung -->
   <a href="https://wa.me/6281585595822" target="_blank" class="join" style="background:#34af23;">📲 Chat Langsung WA</a>
-
-  <div class="payment">
-    <b>💰 Pembayaran:</b><br>
-    Gopay: <b>Kylz</b><br>
-    Dana: <b>Roflin</b><br>
-    No. WA: <b>081585595822</b>
-  </div>
 
   <footer>© 2025 Wok Flinn Mau Femes</footer>
 </body>
