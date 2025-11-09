@@ -27,9 +27,9 @@
     font-family:'Poppins',sans-serif;
     /* BACKGROUND GRADIENT 3 WARNA DENGAN UKURAN LEBIH BESAR */
     background:linear-gradient(135deg, var(--bg-color-1) 0%, var(--bg-color-2) 50%, var(--bg-color-3) 100%); 
-    background-size: 300% 300%; /* Ukuran lebih besar agar pergerakan terlihat jelas */
-    animation: gradientMove 15s ease infinite; /* Animasi lebih lambat */
-    color:var(--text-light); /* Teks putih */
+    background-size: 300% 300%;
+    animation: gradientMove 15s ease infinite; 
+    color:var(--text-light); 
     min-height:100vh;
     display:flex;
     flex-direction:column;
@@ -137,7 +137,8 @@ const ADMIN = "6281585595822";
 // Fungsi order WA dengan format lengkap
 function order(platform, paket, harga){
   const msg = encodeURIComponent((SIMULASI) Bang order paket ${paket} ${platform} = ${harga});
-  window.open(https://wa.me/${ADMIN}?text=${msg},'_blank');
+  // Menggunakan 'window.location.href' agar lebih agresif di beberapa browser mobile
+  window.location.href = https://wa.me/${ADMIN}?text=${msg};
 }
 </script>
 </head>
@@ -217,8 +218,7 @@ function order(platform, paket, harga){
       <li onclick="order('Instagram','300 View','2k')"><span>300 View</span><span class="price">2k</span></li>
       <li onclick="order('Instagram','400 View','2.5k')"><span>400 View</span><span class="price">2.5k</span></li>
       <li onclick="order('Instagram','500 View','3k')"><span>500 View</span><span class="price">3k</span></li>
-      <li onclick="order('Instagram','600 View','3.5k')"><span>600 View</span><span class="price">3.5k</span></li>
-      <li onclick="order('Instagram','700 View','4k')"><span>700 View</span><span class="price">4k</span></li>
+      <li onclick="order('Instagram','600 View','3.5k')"><span>600 View</span><span class="price">3.5k</span></li> <li onclick="order('Instagram','700 View','4k')"><span>700 View</span><span class="price">4k</span></li>
       <li onclick="order('Instagram','800 View','4.5k')"><span>800 View</span><span class="price">4.5k</span></li>
       <li onclick="order('Instagram','900 View','5k')"><span>900 View</span><span class="price">5k</span></li>
       <li onclick="order('Instagram','1000 View','5.5k')"><span>1000 View</span><span class="price">5.5k</span></li>
