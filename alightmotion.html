@@ -6,36 +6,103 @@
 <title>Alight Motion — Wok Flinn</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-  body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(120deg,#0099ff,#8f00ff); background-size:200% 200%; animation: gradientMove 8s ease infinite; color:#fff; text-align:center; padding:20px;}
-  @keyframes gradientMove {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
-  h1{font-size:36px;margin-bottom:20px;text-shadow:0 2px 10px rgba(0,0,0,0.2);}
-  table { margin:20px auto; border-collapse:collapse; width:90%; max-width:400px; }
-  th, td { padding:12px; border-radius:8px; }
-  th { background:rgba(255,255,255,0.3); }
-  td { background:rgba(255,255,255,0.15); }
-  a.button{display:inline-block;margin:15px;padding:12px 28px;background:#25d366;color:#fff;text-decoration:none;border-radius:10px;font-weight:600;}
-  a.button:hover{background:#1da955;transform:scale(1.05);transition:0.3s;}
-  footer{margin-top:40px;color:#ddd;font-size:13px;}
+  :root{
+    --bg1:#0099ff; /* biru IG/TikTok */
+    --bg2:#8f00ff; /* ungu IG/TikTok */
+    --card:rgba(255,255,255,0.12);
+    --card-hover:rgba(255,255,255,0.22);
+    --wa:#25d366;
+  }
+  body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(120deg,var(--bg1),var(--bg2));
+    background-size:200% 200%;
+    animation: gradientMove 8s ease infinite;
+    color:#fff;
+    text-align:center;
+    padding:24px;
+  }
+  @keyframes gradientMove {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  h1{font-size:34px;margin:18px 0 6px;text-shadow:0 2px 8px rgba(0,0,0,0.25);}
+  p.lead{margin:0 0 18px;color:#eaeef8;}
+  .table-wrap{max-width:760px;margin:0 auto;background:transparent;padding:8px;}
+  table{width:100%;border-collapse:collapse;margin:12px 0;}
+  thead th{background:rgba(255,255,255,0.18);padding:12px;border-radius:8px 8px 0 0;font-weight:700;}
+  th, td{padding:12px;text-align:left;font-weight:600;}
+  tbody tr{background:var(--card);transition:0.18s;border-radius:8px;}
+  tbody tr:hover{background:var(--card-hover);transform:translateY(-4px);}
+  .amount-link{
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:8px;
+    background:transparent;
+  }
+  .btn-wa{
+    display:inline-block;
+    padding:10px 16px;
+    background:var(--wa);
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:800;
+    margin-top:12px;
+  }
+  .features{max-width:720px;margin:24px auto;text-align:left;background:rgba(255,255,255,0.12);padding:16px;border-radius:12px;}
+  .features h3{margin-top:0;}
+  .row-flex{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
+  a.back{display:inline-block;margin-top:16px;padding:10px 18px;border-radius:10px;background:rgba(0,0,0,0.18);color:#fff;text-decoration:none;font-weight:700;}
+  footer{margin-top:40px;font-size:14px;color:#ddd;opacity:0.85;}
+  @media (max-width:560px){thead th, th, td{font-size:14px} a{width:100%}}
 </style>
 </head>
 <body>
-<h1>🪿 Alight Motion</h1>
 
-<p>BG order Alight Motion lewat WA:</p>
-<a href="https://wa.me/6281585595822?text=bg%20order%20alight%20motion" target="_blank" class="button">📲 Chat WA</a>
+<h1>⚡ Alight Motion</h1>
+<p class="lead">Pilih paket — klik untuk langsung order via WhatsApp</p>
 
-<!-- Tabel Harga Jualan -->
+<div class="table-wrap">
 <table>
-<tr><th>Paket</th><th>Harga Jual</th></tr>
-<tr><td>1 Tahun - Acc Buyer</td><td>5.000</td></tr>
-<tr><td>1 Tahun - Acc Seller</td><td>6.500</td></tr>
-<tr><td>Private 1 Tahun - Acc Buyer</td><td>7.000</td></tr>
-<tr><td>Private 1 Tahun - Acc Seller</td><td>8.500</td></tr>
+<thead>
+<tr><th>Paket</th><th>Harga</th><th>Order (Klik)</th></tr>
+</thead>
+<tbody>
+<tr><td>1 Tahun Privat (Android)</td><td>4k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%201%20Tahun%20Privat%20(Android)%204k">Order</a></td></tr>
+<tr><td>1 Tahun Privat (iOS)</td><td>5k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%201%20Tahun%20Privat%20(iOS)%205k">Order</a></td></tr>
+<tr><td>Paket 10 Akun</td><td>7k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%20Paket%2010%20Akun%207k">Order</a></td></tr>
+</tbody>
 </table>
+</div>
 
-<!-- Kembali ke Halaman Depan -->
-<a href="index.html" class="button" style="background:#ff6600;">🏠 Kembali ke Halaman Depan</a>
+<div class="features">
+<h3>Fitur & Benefit:</h3>
+<ul>
+<li>Gada iklan</li>
+<li>Gada watermark</li>
+<li>Support file .xml sampai 5MB</li>
+<li>Support Android / iOS</li>
+</ul>
+<h3>Noted:</h3>
+<ul>
+<li>Privat akun, login via email</li>
+<li>Anti error dan garansi 6 bulan</li>
+</ul>
+</div>
 
-<footer>© 2025 Wok Flinn Mau Femes</footer>
+<div class="row-flex">
+<a class="btn-wa" href="https://wa.me/6281585595822?text=Bg%20order%20semua%20paket%20Alight%20Motion">📲 Chat Semua Order</a>
+<a class="back" href="index.html">🏠 Kembali ke Halaman Depan</a>
+</div>
+
+<footer>
+<p>Powered by <strong>Wok Flinn Mau Femes 🚀</strong></p>
+</footer>
+
 </body>
-</html>]
+</html>
