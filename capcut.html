@@ -6,36 +6,106 @@
 <title>CapCut — Wok Flinn</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-  body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(120deg,#0099ff,#8f00ff); background-size:200% 200%; animation: gradientMove 8s ease infinite; color:#fff; text-align:center; padding:20px;}
-  @keyframes gradientMove {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
-  h1{font-size:36px;margin-bottom:20px;text-shadow:0 2px 10px rgba(0,0,0,0.2);}
-  table { margin:20px auto; border-collapse:collapse; width:90%; max-width:400px; }
-  th, td { padding:12px; border-radius:8px; }
-  th { background:rgba(255,255,255,0.3); }
-  td { background:rgba(255,255,255,0.15); }
-  a.button{display:inline-block;margin:15px;padding:12px 28px;background:#25d366;color:#fff;text-decoration:none;border-radius:10px;font-weight:600;}
-  a.button:hover{background:#1da955;transform:scale(1.05);transition:0.3s;}
-  footer{margin-top:40px;color:#ddd;font-size:13px;}
+  :root{
+    --bg1:#0099ff;
+    --bg2:#8f00ff;
+    --card:rgba(255,255,255,0.12);
+    --card-hover:rgba(255,255,255,0.22);
+    --wa:#25d366;
+  }
+  body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(120deg,var(--bg1),var(--bg2));
+    background-size:200% 200%;
+    animation: gradientMove 8s ease infinite;
+    color:#fff;
+    text-align:center;
+    padding:24px;
+  }
+  @keyframes gradientMove {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  h1{font-size:34px;margin:18px 0 6px;text-shadow:0 2px 8px rgba(0,0,0,0.25);}
+  p.lead{margin:0 0 18px;color:#eaeef8;}
+  .table-wrap{max-width:760px;margin:0 auto;background:transparent;padding:8px;}
+  table{width:100%;border-collapse:collapse;margin:12px 0;}
+  thead th{background:rgba(255,255,255,0.18);padding:12px;border-radius:8px 8px 0 0;font-weight:700;}
+  th, td{padding:12px;text-align:left;font-weight:600;}
+  tbody tr{background:var(--card);transition:0.18s;border-radius:8px;}
+  tbody tr:hover{background:var(--card-hover);transform:translateY(-4px);}
+  .amount-link{
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:8px;
+    background:transparent;
+  }
+  .btn-wa{
+    display:inline-block;
+    padding:10px 16px;
+    background:var(--wa);
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:800;
+    margin-top:12px;
+  }
+  .features{max-width:720px;margin:24px auto;text-align:left;background:rgba(255,255,255,0.12);padding:16px;border-radius:12px;}
+  .features h3{margin-top:0;}
+  .row-flex{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
+  a.back{display:inline-block;margin-top:16px;padding:10px 18px;border-radius:10px;background:rgba(0,0,0,0.18);color:#fff;text-decoration:none;font-weight:700;}
+  footer{margin-top:40px;font-size:14px;color:#ddd;opacity:0.85;}
+  @media (max-width:560px){thead th, th, td{font-size:14px} a{width:100%}}
 </style>
 </head>
 <body>
-<h1>🎬 CapCut</h1>
 
-<p>BG order CapCut lewat WA:</p>
-<a href="https://wa.me/6281585595822?text=bg%20order%20capcut" target="_blank" class="button">📲 Chat WA</a>
+<h1>⚡ CapCut</h1>
+<p class="lead">Pilih paket — klik untuk langsung order via WhatsApp</p>
 
-<!-- Tabel Harga Jualan -->
+<div class="table-wrap">
 <table>
-<tr><th>Paket</th><th>Harga Jual</th></tr>
-<tr><td>Sharing 7 Hari</td><td>8.000</td></tr>
-<tr><td>Sharing 1 Bulan</td><td>13.000</td></tr>
-<tr><td>Private 7 Hari</td><td>20.000</td></tr>
-<tr><td>Private 1 Bulan</td><td>30.000</td></tr>
+<thead>
+<tr><th>Paket</th><th>Harga</th><th>Order (Klik)</th></tr>
+</thead>
+<tbody>
+<tr><td>7 Hari Sharing</td><td>4k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%207%20Hari%20Sharing%20CapCut%204k">Order</a></td></tr>
+<tr><td>7 Hari Privat</td><td>6k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%207%20Hari%20Privat%20CapCut%206k">Order</a></td></tr>
+<tr><td>1 Bulan Sharing</td><td>16k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%201%20Bulan%20Sharing%20CapCut%2016k">Order</a></td></tr>
+<tr><td>1 Bulan Privat</td><td>32k</td><td><a class="amount-link" target="_blank" href="https://wa.me/6281585595822?text=Bg%20order%201%20Bulan%20Privat%20CapCut%2032k">Order</a></td></tr>
+</tbody>
 </table>
+</div>
 
-<!-- Kembali ke Halaman Depan -->
-<a href="index.html" class="button" style="background:#ff6600;">🏠 Kembali ke Halaman Depan</a>
+<div class="features">
+<h3>Fitur & Benefit:</h3>
+<ul>
+<li>Efek dan filter bervariasi</li>
+<li>Tools Pro unlocked</li>
+<li>Template Pro unlocked</li>
+<li>Cloud storage 100GB</li>
+</ul>
+<h3>Noted:</h3>
+<ul>
+<li>Akun dari admin</li>
+<li>Durasi 7 hari</li>
+<li>Legal dan bergaransi</li>
+<li>Sharing 2 user</li>
+</ul>
+</div>
 
-<footer>© 2025 Wok Flinn Mau Femes</footer>
+<div class="row-flex">
+<a class="btn-wa" href="https://wa.me/6281585595822?text=Bg%20order%20semua%20paket%20CapCut">📲 Chat Semua Order</a>
+<a class="back" href="index.html">🏠 Kembali ke Halaman Depan</a>
+</div>
+
+<footer>
+<p>Powered by <strong>Wok Flinn Mau Femes 🚀</strong></p>
+</footer>
+
 </body>
 </html>
