@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1a204d, #0c0f24 65%);
+  color: #fff;
+}
+
+/* CARD WRAPPER */
+.card {
+  width: 380px;
+  padding: 28px 24px;
+  border-radius: 20px;
+  text-align: center;
+
+  background: rgba(18, 20, 45, 0.9);
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
+
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* PROFILE IMAGE */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  border: 2px solid #6f74ff;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* HEADINGS */
+h1 {
+  margin: 6px 0 2px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.sub {
+  margin: 0 0 14px;
+  opacity: 0.85;
+  font-size: 13px;
+}
+
+/* SECTION TITLE */
+.group-title {
+  margin-top: 16px;
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  opacity: 0.7;
+}
+
+/* BUTTON GROUP */
+.btns {
+  margin-top: 6px;
+}
+
+/* BUTTON STYLE */
+.btns a {
+  display: block;
+  margin-top: 10px;
+  padding: 12px 14px;
+
+  border-radius: 14px;
+  text-decoration: none;
+
+  background: #1f2353;
+  color: #ffffff;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.btns a:hover {
+  background: #4f57ff;
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+/* QRIS BOX (kalau pakai) */
+.qris-box{
+  background: #1a1d46;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.qris-img{
+  width: 100%;
+  max-width: 240px;
+  border-radius: 10px;
+  display: block;
+  margin: 6px auto 10px;
+}
+
+.qris-note{
+  font-size: 13px;
+  opacity: .8;
+}
+
+/* FOOTER TEXT */
+small {
+  display: block;
+  margin-top: 18px;
+  opacity: 0.55;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 430px) {
+  .card {
+    width: 92%;
+    padding: 24px 18px;
+  }
+}
+/* baris khusus buat wa + tiktok + ig */
+.btns.row{
+  display:flex;
+  gap:10px;
+}
+
+/* bikin lebar tiap tombol rata */
+.btns.row a{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+
+/* biar hp kecil gak nangis */
+@media (max-width: 430px){
+  .btns.row{
+    flex-direction:column;
+  }
+}
